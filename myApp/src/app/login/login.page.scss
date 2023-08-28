@@ -1,0 +1,34 @@
+.titulo-login-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-login-page h3{
+  margin-top: 10;
+}
+
+.form-login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 40px 20px 40px;
+}
+
+.form-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-buttons ion-button{
+  width: 80%;
+  border-radius: 5px;
+  background: aliceblue;
+  border: 2px solid none;
+  color: #343434;
+}
+
+

@@ -1,0 +1,37 @@
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-button>Login</ion-button>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <div class="titulo-login-page">
+      <h1>SkeletonAPP</h1>
+      <h3>Tu Subtítulo Aquí</h3>
+    </div>
+
+    <div class="form-login">
+      <ion-input label="Usuario" labelPlacement="stacked" placeholder="Ingrese nombre de usuario"></ion-input>
+
+      <ion-input label="Password" type="password" labelPlacement="stacked" placeholder="*******"></ion-input>
+    </div>
+
+    <div class="form-buttons">
+      <ion-button fill="outline"[routerLink]="['/home']" >Ingresar</ion-button>
+
+      <div>
+        <a href="">Crea tu cuenta gratis</a>
+      </div>
+    </div>
+
+</ion-content>
