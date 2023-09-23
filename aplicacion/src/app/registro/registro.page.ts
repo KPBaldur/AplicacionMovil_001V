@@ -12,4 +12,16 @@ export class RegistroPage implements OnInit {
   ngOnInit() {
   }
 
+  register = {
+    name:'',
+    lastName: '',
+    userName: '',
+    email: '',
+    password: '',
+  }
+
+  onRegister(){
+    console.log(this.register);
+  }
+
 }

@@ -8,7 +8,27 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <div class="titulo-sign-in">
+    <h2>Registro de cuenta</h2>
+  </div>
 
+  <form class="form-registrer" (ngSubmit)="onRegister()" #myForm="ngForm">
+    <div class="registrer-name">
+      <ion-input label="Nombre" labelPlacement="stacked" placeholder="Ingrese su Nombre" required [(ngModel)]="register.name"></ion-input>
+      <ion-input label="Apellido" labelPlacement="stacked" placeholder="Ingrese su Apellido" required [(ngModel)]="register.lastName"></ion-input>
+    </div>
 
+    <ion-input label="Nombre de Usuario" labelPlacement="stacked" placeholder="Ingrese su nombre de Usuario" required [(ngModel)]="register.userName"></ion-input>
+    <ion-input label="Correo de Duoc" labelPlacement="stacked" placeholder="Ingrese su correo Duoc" required [(ngModel)]="register.email"></ion-input>
+    <ion-input label="Ingrese una Contraseña" type="password" labelPlacement="stacked" placeholder="*******" required [(ngModel)]="register.password"></ion-input>
+    <ion-input label="Repita la Contraseña" type="password" labelPlacement="stacked" placeholder="*******" ></ion-input>
+
+    <ion-checkbox labelPlacement="end">Acepto los <a href="">acuerdos de registro</a></ion-checkbox>
+    <ion-button fill="outline"[routerLink]="['/home']" [disabled]="myForm.invalid">Ingresar</ion-button>
+
+    <p>Ya tienes una cuenta?</p>
+    <a [routerLink]="['/login']">Inicia Sesion Aqui</a>
+
+  </form>
 </ion-content>

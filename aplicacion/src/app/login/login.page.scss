@@ -1,3 +1,7 @@
+ion-content{
+  margin: auto;
+}
+
 .titulo-login-page{
   display: flex;
   flex-direction: column;
@@ -6,6 +10,7 @@
 
 .titulo-login-page h3{
   margin-top: 10;
+  margin-bottom: 50px;
 }
 
 .form-login{
@@ -29,4 +34,6 @@
   background: aliceblue;
   border: 2px solid none;
   color: #343434;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
