@@ -12,4 +12,15 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
+  btnDisable = true;
+
+  register = {
+    user: '',
+    password: ''
+  }
+
+  onRegister(){
+    console.log(this.register);
+  }
+
 }

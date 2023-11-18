@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start" [routerLink]="['/start-app']">
+      <ion-button color="primary">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Recupera tu contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-content [fullscreen]="true">
+
+    <div class="form-login">
+      <ion-input label="Usuario" labelPlacement="stacked" placeholder="Ingrese nombre de usuario"></ion-input>
+
+      <ion-input label="Password" type="password" labelPlacement="stacked" placeholder="Ingresa una contraseña"></ion-input>
+      <ion-input label="Password" type="password" labelPlacement="stacked" placeholder="Reingresa la contraseña"></ion-input>
+    </div>
+
+    <div class="form-buttons">
+      <ion-button fill="outline"[routerLink]="['/home']" >Recuperar Contraseña</ion-button>
+    </div>
+
+</ion-content>
+</ion-content>
+
+

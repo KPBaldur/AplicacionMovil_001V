@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'start-app',
+    redirectTo: 'recovery-pass',
     pathMatch: 'full'
   },
   {
@@ -16,13 +16,14 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'registro',
-    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
-  },
-  {
     path: 'start-app',
     loadChildren: () => import('./start-app/start-app.module').then( m => m.StartAppPageModule)
   },
+  {
+    path: 'recovery-pass',
+    loadChildren: () => import('./recovery-pass/recovery-pass.module').then( m => m.RecoveryPassPageModule)
+  },
+
 ];
 
 @NgModule({

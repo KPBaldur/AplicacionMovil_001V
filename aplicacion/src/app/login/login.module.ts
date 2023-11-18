@@ -17,4 +17,13 @@ import { LoginPage } from './login.page';
   ],
   declarations: [LoginPage]
 })
-export class LoginPageModule {}
+export class LoginPageModule {
+
+  user = {
+    nameUser: '',
+    pass: ''
+  } 
+
+  btnDisable= true;
+
+}
