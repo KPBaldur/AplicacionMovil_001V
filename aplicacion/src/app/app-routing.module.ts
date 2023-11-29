@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'recovery-pass',
+    redirectTo: 'start-app',
     pathMatch: 'full'
   },
   {
