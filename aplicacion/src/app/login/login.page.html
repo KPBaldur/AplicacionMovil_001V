@@ -1,31 +1,35 @@
-<ion-header class="ion-no-border" [translucent]="true">
-  <ion-toolbar >
+<ion-header [translucent]="true">
+  <ion-toolbar>
     <ion-buttons slot="start" [routerLink]="['/start-app']">
       <ion-button color="primary">
         <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
+    <ion-title>Inicia Sesion</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-content [fullscreen]="true">
 
-  <div class="titulo-login-page">
-    <h1>Presente Profe!</h1>
-    <h3>Duoc UC</h3>
-  </div>
+    <div class="titulo-login-page">
+      <h1>Presente Profe!</h1>
+      <h3>Duoc UC</h3>
+    </div>
+  
+      <form (ngSubmit)="onRegister()" #myForm="ngForm">
+        <div class="form-login">
+          <ion-input [(ngModel)]="register.user" required id="user" label="Usuario" labelPlacement="stacked" placeholder="Ingrese nombre de usuario"></ion-input>
+    
+          <ion-input [(ngModel)]="register.password" required id="password" label="Password" type="password" labelPlacement="stacked" placeholder="*******"></ion-input>
+        </div>
+    
+        <div class="form-buttons">
+          <ion-button fill="outline"[routerLink]="['/home']" [disabled]="myForm.invalid" type="submit" >Ingresar</ion-button>
+          <p>Olvidaste tu contraseña? Recuperala <a [routerLink]="['/recovery-pass']">Aqui</a></p>
+        </div>
+      </form>
+  
 
-    <form (ngSubmit)="onRegister()" #myForm="ngForm">
-      <div class="form-login">
-        <ion-input [(ngModel)]="register.user" required id="user" label="Usuario" labelPlacement="stacked" placeholder="Ingrese nombre de usuario"></ion-input>
-  
-        <ion-input [(ngModel)]="register.password" required id="password" label="Password" type="password" labelPlacement="stacked" placeholder="*******"></ion-input>
-      </div>
-  
-      <div class="form-buttons">
-        <button fill="outline"[routerLink]="['/home']" [disabled]="myForm.invalid" type="submit">Ingresar</button>
-        <ion-button fill="outline"[routerLink]="['/home']" [disabled]="myForm.invalid" type="submit" >Ingresar</ion-button>
-        <p>Olvidaste tu contraseña? Recuperala <a [routerLink]="['/recovery-pass']">Aqui</a></p>
-      </div>
-    </form>
+  </ion-content>
 </ion-content>

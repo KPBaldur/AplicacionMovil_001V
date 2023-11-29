@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
-
 import { LoginPageRoutingModule } from './login-routing.module';
-
 import { LoginPage } from './login.page';
+
+import { User } from './../user.module';
 
 @NgModule({
   imports: [
@@ -19,10 +18,7 @@ import { LoginPage } from './login.page';
 })
 export class LoginPageModule {
 
-  user = {
-    nameUser: '',
-    pass: ''
-  } 
+  users: User[] = [] 
 
   btnDisable= true;
 

@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
-
 import { RecoveryPassPageRoutingModule } from './recovery-pass-routing.module';
-
 import { RecoveryPassPage } from './recovery-pass.page';
+
+import { User } from '../user.module';
 
 @NgModule({
   imports: [
@@ -17,4 +16,7 @@ import { RecoveryPassPage } from './recovery-pass.page';
   ],
   declarations: [RecoveryPassPage]
 })
-export class RecoveryPassPageModule {}
+export class RecoveryPassPageModule {
+
+  users: User[] =
+}
