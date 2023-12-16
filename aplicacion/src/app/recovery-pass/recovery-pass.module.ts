@@ -17,6 +17,4 @@ import { User } from '../user.module';
   declarations: [RecoveryPassPage]
 })
 export class RecoveryPassPageModule {
-
-  users: User[] =
 }

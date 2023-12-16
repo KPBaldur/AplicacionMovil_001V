@@ -1,4 +1,8 @@
-.titulo-login-page{
+ion-content{
+    margin: auto;
+  }
+  
+  .titulo-login-page{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,8 +12,8 @@
     margin-top: 10;
     margin-bottom: 50px;
   }
-
-.form-login{
+  
+  .form-login{
     display: flex;
     flex-direction: column;
     justify-content: center;
